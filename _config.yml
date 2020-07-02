@@ -29,10 +29,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+paginate: 5
+
 # Build settings
-theme: jekyll-theme-slate
+remote_theme: "mmistakes/minimal-mistakes@4.19.3"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
