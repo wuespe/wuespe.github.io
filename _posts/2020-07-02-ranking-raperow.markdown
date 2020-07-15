@@ -4,8 +4,10 @@ classes: wide
 title:  "Próba ilościowej lustracji słów bez spacji, w celu literackiej MC gradacji (z ilustracjami)"
 date:   2020-07-02 20:20:00 +0200
 categories: ranking-raperów
-image: /assets/ranking-raperow/ranking_cropped.png
+header.image: /assets/ranking-raperow/ranking_cropped.png
 ---
+
+![open graph](/assets/ranking-raperow/ranking_cropped.png)
 
 Znalazłem kiedyś ciekawy post o tym ile słów używają amerykańscy raperzy ([The Largest Vocabulary In Hip Hop][rappers-sorted]) i postanowiłem że zrobię coś takiego dla polskich. Ściągnąłem dane ze Spotify, teksty z Geniusa, połączyłem je ze słownikiem i zorientowałem się, że mogę policzyć z tego jeszcze parę innych rzeczy.  
 Użyłem słownika z projektu [PoliMorfologik][polimorfologik], który zawiera kilka milionów odmienionych wyrazów z ich nieodmienioną formą (leksemem). Dołączyłem do tego zbiór wyrazów sklasyfikowanych do jednej z 5 emocji ([Nencki Affective Word List][nawl]) i na koniec pół-automatycznie oznaczyłem wulgarne słowa (wyszło mi ponad 6 tys. przekleństw!).  
