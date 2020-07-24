@@ -2,18 +2,18 @@
 layout: single
 classes: wide
 title:  "Próba ilościowej lustracji słów bez spacji, w celu literackiej MC gradacji (z ilustracjami)"
-date:   2020-07-23 17:00:00 +0200
+date:   2020-07-23 20:00:00 +0200
 categories: ranking-raperów
 header.image: /assets/ranking-raperow/ranking_cropped.png
 ---
 
 ![open graph](/assets/ranking-raperow/ranking_cropped.png)
 ---
-Znalazłem kiedyś ciekawy post o tym ile słów używają amerykańscy raperzy ([The Largest Vocabulary In Hip Hop][rappers-sorted]) i postanowiłem że zrobię coś takiego dla polskich. Ściągnąłem dane ze Spotify, teksty z Geniusa, połączyłem je ze słownikiem i przyszło mi w międzyczasie do głowy parę innych pomysłów na podsumowanie raperów i ich płyt. Chcę je opisać w paru postach, a w tym popatrzę ile jest wulgaryzmów i jak gęste w słowa są utwory polskich raperów.
+Znalazłem kiedyś [ciekawy post o tym ile słów używają amerykańscy raperzy][rappers-sorted] i postanowiłem że zrobię coś takiego dla polskich. Ściągnąłem dane ze Spotify, teksty z Geniusa, połączyłem je ze słownikiem i przyszło mi w międzyczasie do głowy parę innych pomysłów na podsumowanie raperów i ich płyt. Chcę je opisać w paru postach, a w tym popatrzę ile jest wulgaryzmów i jak gęste w słowa są utwory polskich raperów.
 
 ------
 
-Do przeanalizowania wybrałem nieco arbitralnie raperów, których znam albo są popularni. Pobrałem ich dyskografię przez API Spotify, przez co na wstępie ograniczyłem się do artystów którzy są tam z w miarę kompletnym dorobkiem. Jeśli zauważyłem jakieś istotne braki albo błędy, które musiałbym poprawiać i uzupełniać ręcznie to na razie wukluczałem raperów, których to dotyczy. Zamierzam kiedyś rozszerzyć listę artystów o tych pominiętych, a także tych, których nie da się tam streamować. Teksty ściągnąłem z Genius.com przy pomocy pakietu [LyricsGenius][lyricsgenius].  
+Do przeanalizowania wybrałem nieco arbitralnie raperów, których znam albo są popularni. Pobrałem ich dyskografię przez API Spotify, przez co na wstępie ograniczyłem się do artystów którzy są tam z w miarę kompletnym dorobkiem. Jeśli zauważyłem jakieś istotne braki albo błędy, które musiałbym poprawiać i uzupełniać ręcznie to na razie wykluczałem raperów, których to dotyczy. Zamierzam kiedyś rozszerzyć listę artystów o tych pominiętych, a także tych, których nie da się tam streamować. Teksty ściągnąłem z Genius.com przy pomocy pakietu [LyricsGenius][lyricsgenius].  
 
 Użyłem słownika z projektu [PoliMorfologik][polimorfologik], który zawiera kilka milionów odmienionych wyrazów z ich nieodmienioną formą (leksemem). Dołączyłem do tego zbiór wyrazów sklasyfikowanych do jednej z 5 emocji ([Nencki Affective Word List][nawl]) oraz pół-automatycznie oznaczyłem wulgarne słowa (wyszło mi ponad 6 tys. przekleństw!).  
 
@@ -42,9 +42,11 @@ Na drugim końcu głównie młodsi raperzy, którzy w swoich tekstach częściej
 
 ## Za szybcy za wulgarni
 
-Teraz mogę przejść do tempa rapowania i zawartości wulgaryzmów. Umieściłem je na dwóch osiach żeby zobaczyć czy korelują ze sobą.
+Teraz mogę przejść do tempa rapowania i zawartości wulgaryzmów. Umieściłem je na dwóch osiach, żeby zobaczyć czy korelują ze sobą.
 
 Pogrupowałem artystów na 3 okresy według daty wydania pierwszej płyty. Niestety na Spotify czasem nie ma dawnych albumów, albo są reedycje zamiast oryginałów, stąd jest tu parę niezgodności.
+
+Najedź kursorem na kropkę żeby zobaczyć co to za raper (niezbyt dobrze działa na smartfonach):
 
 <iframe src="/assets/ranking-raperow/bokeh_plots/artists_vulg_vs_speed.html"
     sandbox="allow-same-origin allow-scripts"
@@ -57,7 +59,7 @@ Pogrupowałem artystów na 3 okresy według daty wydania pierwszej płyty. Niest
 
 Mimo, że piszę o szybkości albo tempie rapowania to nie do końca celne określenie. Policzyłem je dzieląc liczbę słów przez długość utworu (wersji na Spotify), więc można powiedzieć że to gęstość słów na sekundę utworu. Długie instrumentalne intra, outra i przerywniki albo śpiewane hooki będą zaniżać tę liczbę, więc jest to miara w pewien sposób powiązana ze stylem.
 
-Poniżej albumy zaznaczonych raperów, zredukowane do dwóch wymiarów.
+Poniżej albumy zaznaczonych raperów, także zredukowane do tych dwóch wymiarów.
 
 <iframe src="/assets/ranking-raperow/bokeh_plots/albums_vulg_vs_speed_choice.html"
     sandbox="allow-same-origin allow-scripts"
