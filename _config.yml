@@ -18,7 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: W  S  P
+author:
+  name     : "Wojciech Strzembosz-Pieńkowski"
+  avatar   : "/assets/images/profile_cropped.jpg"
+  bio      : ""
+
+
+title: W|S-P
+title_separator: "-"
+masthead_title: Wstępne Składowisko Projektów
+# subtitle: 
 email: wojciechgm@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -36,7 +45,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+minimal_mistakes_skin: "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
 
 # Exclude from processing.
