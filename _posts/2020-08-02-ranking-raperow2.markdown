@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title:  "Polscy raperzy i raperki. Ile słów używają? Czy używają dużo słów? Przekonajmy się!"
-date:   2020-08-01 20:00:00 +0200
+date:   2020-08-13 20:00:00 +0200
 categories: ranking-raperów
 ---
 ![open graph](/assets/ranking-raperow2/header_albums.jpg)
