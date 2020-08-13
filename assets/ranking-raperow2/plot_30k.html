@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="fc7c0bda-2320-4ca6-9438-b0f1c699770a" data-root-id="1003"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4684">
+          {"71c2e275-5cee-4b88-8d1d-042cc5bad953":{"roots":{"references":[{"attributes":{"above":[{"id":"1049","type":"LinearAxis"}],"below":[{"id":"1012","type":"LinearAxis"}],"center":[{"id":"1016","type":"Grid"},{"id":"1020","type":"Grid"},{"id":"1035","type":"Whisker"}],"left":[{"id":"1017","type":"CategoricalAxis"}],"margin":[150,0,150,0],"plot_height":900,"plot_width":800,"renderers":[{"id":"1042","type":"GlyphRenderer"},{"id":"1047","type":"GlyphRenderer"}],"title":{"id":"1051","type":"Title"},"toolbar":{"id":"1027","type":"Toolbar"},"x_range":{"id":"1004","type":"Range1d"},"x_scale":{"id":"1008","type":"LinearScale"},"y_range":{"id":"1006","type":"FactorRange"},"y_scale":{"id":"1010","type":"CategoricalScale"}},"id":"1003","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"1055","type":"BasicTickFormatter"},"ticker":{"id":"1013","type":"BasicTicker"}},"id":"1012","type":"LinearAxis"},{"attributes":{"formatter":{"id":"1059","type":"CategoricalTickFormatter"},"major_label_text_font_size":{"value":"15pt"},"major_label_text_font_style":"bold","ticker":{"id":"1018","type":"CategoricalTicker"}},"id":"1017","type":"CategoricalAxis"},{"attributes":{"level":"underlay","size":10},"id":"1052","type":"TeeHead"},{"attributes":{"angle":{"units":"rad","value":1.5707963267948966},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":3},"size":{"units":"screen","value":50},"x":{"field":"ded_unique_words_mean"},"y":{"field":"artist"}},"id":"1041","type":"Dash"},{"attributes":{},"id":"1025","type":"ResetTool"},{"attributes":{"level":"underlay","size":10},"id":"1053","type":"TeeHead"},{"attributes":{"source":{"id":"1002","type":"ColumnDataSource"}},"id":"1043","type":"CDSView"},{"attributes":{},"id":"1021","type":"PanTool"},{"attributes":{},"id":"1026","type":"HelpTool"},{"attributes":{"callback":null,"mode":"hline","names":["total"],"tooltips":"\n    &lt;div&gt;\n        &lt;div&gt;\n            &lt;img\n                src=\"@url\" width=\"200\"\n                style=\"float: left; margin: 0px 15px 15px 0px;\"\n                border=\"2\"\n            &gt;&lt;/img&gt;\n        &lt;/div&gt;\n        &lt;div&gt;\n            &lt;span style=\"font-size: 17px; font-weight: bold;\"&gt;@artist&lt;/span&gt;\n        &lt;/div&gt;\n        &lt;div&gt;\n            &lt;span style=\"font-size: 14px;\"&gt;Unikalne s\u0142owa @total_unique_words &lt;/span&gt;\n        &lt;/div&gt;\n        &lt;div&gt;\n            &lt;span style=\"font-size: 14px;\"&gt;Unikalne leksemy @ded_unique_words_lower_bound - @ded_unique_words_upper_bound &lt;/span&gt;\n        &lt;/div&gt;\n\n        &lt;div&gt;\n            &lt;span style=\"font-size: 12px;\"&gt;@share_in_dict{\u20180.0%\u2019} s\u0142\u00f3w w s\u0142owniku&lt;/span&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n"},"id":"1037","type":"HoverTool"},{"attributes":{},"id":"1022","type":"WheelZoomTool"},{"attributes":{},"id":"1056","type":"BasicTicker"},{"attributes":{},"id":"1013","type":"BasicTicker"},{"attributes":{},"id":"1057","type":"BasicTickFormatter"},{"attributes":{},"id":"1018","type":"CategoricalTicker"},{"attributes":{"dimension":1,"ticker":{"id":"1018","type":"CategoricalTicker"}},"id":"1020","type":"Grid"},{"attributes":{},"id":"1024","type":"SaveTool"},{"attributes":{},"id":"1059","type":"CategoricalTickFormatter"},{"attributes":{"ticker":{"id":"1013","type":"BasicTicker"}},"id":"1016","type":"Grid"},{"attributes":{"overlay":{"id":"1062","type":"BoxAnnotation"}},"id":"1023","type":"BoxZoomTool"},{"attributes":{"callback":null,"end":10500,"start":4000},"id":"1004","type":"Range1d"},{"attributes":{},"id":"1060","type":"Selection"},{"attributes":{"callback":null,"data":{"album_release_date":["2015-09-14","2013-07-31","2010","2011-01-17","2013","2010-06-24","2011","2011-03-22","2010-10-10","2015-05-13","2001-10-08","2001-11-28","2008","2009","2009"],"artist":["Kartky","Sarius","Bia\u0142as","VNM","Quebonafide","TEDE","Solar","Chada","Paluch","Taco Hemingway","O.S.T.R.","Peja","PIH","Ten Typ Mes","S\u0142o\u0144"],"artist_id":["7mC8Nb2rN3hM0v0bpxaMzL","3sW41aChSc5bBow0Folc1S","2ufQfSFDFXfMS7MEMzdGZE","5mlPiCqcoz6pDrRj90xbJ2","1fxbULcd6ryMNc1usHoP0R","38iqZSGa2pvToKrMISU8g1","1KJvuZHmkpnrjIyTLhhwpb","03FgbE2vKKVEFBFHi8IfJG","462yq5vpZnO172v3nK9ibv","7CJgLPEqiIRuneZSolpawQ","52XMlxvCIzmiNkzSqEw3Uv","5IQZA1dxUd3Qv73mHNln59","4x2dSjOKPB7f2S5moqNGtV","3AU8FAva0w5qdrf5IVu620","0wm6v5GU6VbR1wtsm0YiTV"],"dataset":["first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k","first_30k"],"ded_unique_words_lower_bound":[4211,4313,4760,5082,5431,5121,5089,4900,4777,5367,5825,5812,6019,6463,6581],"ded_unique_words_mean":{"__ndarray__":"AAAAAAD4sUAAAAAAgFayQAAAAAAAMbRAAAAAAIBbtUAAAAAAALS2QAAAAAAAk7VAAAAAAAB1tUAAAAAAgNe0QAAAAAAAebRAAAAAAICXtkAAAAAAgJG4QAAAAAAAkbhAAAAAAACFuUAAAAAAAPu6QAAAAACAxLtA","dtype":"float64","shape":[15]},"ded_unique_words_upper_bound":[4989,5076,5578,5853,6193,5925,5897,5771,5705,6200,6754,6766,7047,7351,7636],"followers.total":[159931,183075,204176,40272,757057,65057,51473,131470,556777,839048,279491,70616,40492,42409,81786],"genres":["polish hip hop|","polish hip hop|polish trap|","polish hip hop; polish trap","polish hip hop","polish hip hop","polish hip hop","polish hip hop","polish hip hop","polish hip hop; polish trap","polish hip hop; polish trap","polish hip hop","polish hip hop","polish hip hop","polish hip hop","polish hip hop"],"in_dict":[28571,28644,28094,27767,27013,27999,28050,28881,28859,28101,28618,28738,29063,28414,28513],"index":[120,291,26,384,274,353,326,50,218,341,199,225,240,360,307],"share_in_dict":{"__ndarray__":"pkjkqMl57j/LEMe6uI3uPzgUZPGI9+0/8ztz/D2e7T9Io9yQWdDsP+hqK/aX3e0/7FG4HoXr7T+Rfvs6cM7uP2+dpVFuyO4/7zhFR3L57T/LY6cyn4buPx9HTc5jp+4/fjnZ8yIA7z+8x3OQ6k7uP+I8dirzae4/","dtype":"float64","shape":[15]},"total_unique_words":[6821,7019,7667,7744,7751,7890,7905,7984,7990,8048,8930,9219,9689,9816,10421],"url":["https://i.scdn.co/image/83d4b46535213fe1c8152edce000546c274fdefc","https://i.scdn.co/image/2f96752f5e2a2b38c4e0cbf3a7d448f45bc8e364","https://i.scdn.co/image/69fb386f12186781fc8533d04c70159e19f9eb85","https://i.scdn.co/image/afd38e3eb2bad90956a053f7219a4d37c500821d","https://i.scdn.co/image/5ba11cb03756afda4b36558bf76c9e99c8eed61e","https://i.scdn.co/image/ac091e449247636fff7ab38138fb6930923d3b2d","https://i.scdn.co/image/9304b35bd1a8d8840c1135dfcf7eb6ab5e9912f9","https://i.scdn.co/image/43a1f36bbe5dd41480e6d70bb3a8da795ceeda1a","https://i.scdn.co/image/06b45c97d46405e4cf31f25e20998ae467a46548","https://i.scdn.co/image/fa8093e18709878e2836f7e4eb0671d6394c92e8","https://i.scdn.co/image/904a97480ad5b596f3e1794134ecafb5fd2d8f6f","https://i.scdn.co/image/8398dc425765b3a9bc543697dd8157304290bee2","https://i.scdn.co/image/ab67616d0000b2732db5f16a5e3c376c5b587754","https://i.scdn.co/image/1034166160993ea1f15b25a48225ce38d3821487","https://i.scdn.co/image/16b05c6fd3fe10ef380ce405b342c481e62e9fac"],"words":[30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000,30000]},"selected":{"id":"1060","type":"Selection"},"selection_policy":{"id":"1061","type":"UnionRenderers"}},"id":"1002","type":"ColumnDataSource"},{"attributes":{},"id":"1010","type":"CategoricalScale"},{"attributes":{},"id":"1061","type":"UnionRenderers"},{"attributes":{"base":{"field":"artist","units":"data"},"dimension":"width","lower":{"field":"ded_unique_words_lower_bound","units":"data"},"lower_head":{"id":"1052","type":"TeeHead"},"source":{"id":"1002","type":"ColumnDataSource"},"upper":{"field":"ded_unique_words_upper_bound","units":"data"},"upper_head":{"id":"1053","type":"TeeHead"}},"id":"1035","type":"Whisker"},{"attributes":{"angle":{"units":"rad","value":1.5707963267948966},"fill_color":{"value":"#AAAA11"},"line_color":{"value":"#AAAA11"},"line_width":{"value":3},"size":{"units":"screen","value":50},"x":{"field":"ded_unique_words_mean"},"y":{"field":"artist"}},"id":"1040","type":"Dash"},{"attributes":{"formatter":{"id":"1057","type":"BasicTickFormatter"},"ticker":{"id":"1056","type":"BasicTicker"}},"id":"1049","type":"LinearAxis"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1062","type":"BoxAnnotation"},{"attributes":{"data_source":{"id":"1002","type":"ColumnDataSource"},"glyph":{"id":"1045","type":"Dash"},"hover_glyph":null,"muted_glyph":null,"name":"total","nonselection_glyph":{"id":"1046","type":"Dash"},"selection_glyph":null,"view":{"id":"1048","type":"CDSView"}},"id":"1047","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"1002","type":"ColumnDataSource"},"glyph":{"id":"1040","type":"Dash"},"hover_glyph":null,"muted_glyph":null,"name":"dedup","nonselection_glyph":{"id":"1041","type":"Dash"},"selection_glyph":null,"view":{"id":"1043","type":"CDSView"}},"id":"1042","type":"GlyphRenderer"},{"attributes":{"angle":{"units":"rad","value":1.5707963267948966},"fill_color":{"value":"#EE1111"},"line_color":{"value":"#EE1111"},"line_width":{"value":3},"size":{"units":"screen","value":50},"x":{"field":"total_unique_words"},"y":{"field":"artist"}},"id":"1045","type":"Dash"},{"attributes":{"source":{"id":"1002","type":"ColumnDataSource"}},"id":"1048","type":"CDSView"},{"attributes":{},"id":"1055","type":"BasicTickFormatter"},{"attributes":{"text":""},"id":"1051","type":"Title"},{"attributes":{"active_drag":null,"active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1021","type":"PanTool"},{"id":"1022","type":"WheelZoomTool"},{"id":"1023","type":"BoxZoomTool"},{"id":"1024","type":"SaveTool"},{"id":"1025","type":"ResetTool"},{"id":"1026","type":"HelpTool"},{"id":"1037","type":"HoverTool"}]},"id":"1027","type":"Toolbar"},{"attributes":{"angle":{"units":"rad","value":1.5707963267948966},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":3},"size":{"units":"screen","value":50},"x":{"field":"total_unique_words"},"y":{"field":"artist"}},"id":"1046","type":"Dash"},{"attributes":{},"id":"1008","type":"LinearScale"},{"attributes":{"callback":null,"factors":["Kartky","Sarius","Bia\u0142as","VNM","Quebonafide","TEDE","Solar","Chada","Paluch","Taco Hemingway","O.S.T.R.","Peja","PIH","Ten Typ Mes","S\u0142o\u0144"]},"id":"1006","type":"FactorRange"}],"root_ids":["1003"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4684').textContent;
+                  var render_items = [{"docid":"71c2e275-5cee-4b88-8d1d-042cc5bad953","roots":{"1003":"fc7c0bda-2320-4ca6-9438-b0f1c699770a"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
