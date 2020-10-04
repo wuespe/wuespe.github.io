@@ -20,7 +20,7 @@ Poniżej liczba unikatów w każdym 10 tysięcznym zbiorze jako punkt na wykresi
 
 {% include figure image_path="/assets/ranking-raperow3/uqN_per_source" caption="Po lewej liczba unikatów w próbkach, po prawej w wycinkach" %}
 
-Rozrzut wartości jest większy dla wycinków niż dla losowych próbek, co wydaje mi się intuicyjne. To co mnie zaskoczyło to fakt, że próbki mają wyraźnie więcej unikalnych słów. Prawie żaden wycinek (poza jednym w przypadku Tedego) nie ma tylu unikatów co dowolna próbka. Dlaczego losowy działa w ten sposób? Dlaczego losowe próbki mają wyraźnie więcej unikatów?
+Rozrzut wartości jest większy dla wycinków niż dla losowych próbek, co wydaje mi się intuicyjne. To co mnie zaskoczyło to fakt, że próbki mają wyraźnie więcej unikalnych słów. Prawie żaden wycinek (poza jednym w przypadku Tedego) nie ma tylu unikatów co dowolna próbka. Dlaczego losowy podział działa w ten sposób? Dlaczego losowe próbki mają wyraźnie więcej unikatów?
 
 Odpowiedź, którą się zadowoliłem, to większy asortyment różnych słów w pełnym zbiorze.
 
@@ -44,5 +44,35 @@ Na przykładzie OSTRa - w żadnym 10-tysięcznym wycinku nie było więcej niż 
 Na górze liczba unikatów w zbiorze danej wielkości. W miarę zwiększania zbioru jest w nim więcej różnych słów, ale stosunek liczby unikatów do całości łagodnie spada.  
 Na dole średnia liczba unikatów w 10-tysięcznej próbce wylosowanej ze zbioru o danej wielkości. Najpierw szybko rośnie, następnie wypłaszcza się, a potem coś dziwnego się dzieje, bo tymczasowo spada. 
 
-Na razie nie potrafię tego wytłumaczyć, ale sprawdzę czy dla innych raperów też wyjdzie mi takie lokalne minimum.
+Zobaczmy jak to wygląda u innych raperów.
+
+#### Peja
+
+<iframe src="/assets/ranking-raperow3/PEJA_uqN_in_samples.html"
+	    sandbox="allow-same-origin allow-scripts"
+	    width="1000"
+	    height="900"
+	    scrolling="no"
+	    seamless="seamless"
+	    frameborder="0">
+</iframe>
+
+Dla Peji średnio najwyższą liczbę unikatów dostałem losując ze zbiorów ok. 80 tys. wyrazów. Gdy przyjrzy się blisko tym wykresom w okolicach x=72k to widać skok na dolnym, a górny jest nieco bardziej stromy. Stromość albo pochodna krzywej na górnym wykresie to stosunek unikatów do całości w danym punkcie. Czyli między 72000 a 73000 słowem Peja dodał więcej nowych słów, niż w poprzedzającym tysiącu. Średnia z próbek wzrosła przez to trochę bardziej. 
+
+#### Tede
+
+<iframe src="/assets/ranking-raperow3/TEDE_uqN_in_samples.html"
+	    sandbox="allow-same-origin allow-scripts"
+	    width="1000"
+	    height="900"
+	    scrolling="no"
+	    seamless="seamless"
+	    frameborder="0">
+</iframe>
+
+U Tedego podobnie, unikaty w próbce osiągają szczyt, po czym zaczynają spadać.
+
+Jak widać u każdego z tych 3 raperów, ta miara w pewnym momencie się stabilizuje i zaczyna spadać. U każdego dzieje się to w innym punkcie, więc może ma na to wpływ też zawartość nowych tekstów? Na pewno wpływa na to liczba słów, unikatów i stosunek tych dwóch liczb. Może nawet dałoby się znaleźć parametry rozkładu statystyk z próbkowania, w sensie wzór na tą średnią. 
+
+Nie zamierzam tego dalej badać. Zadowolę się wnioskiem, że dwóch artystów lepiej nie porównywać po losowej próbce ich tekstów.
 
